@@ -26,7 +26,7 @@ public class Product {
     private String sku;
 
     @Column(name = "name")
-    private String nameee;
+    private String name;
 
     @Column(name = "description")
     private String description;

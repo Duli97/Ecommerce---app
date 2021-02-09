@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @CrossOrigin("http://localhost:4200")
-public interface ProductRepo extends CrudRepository<Product, Long> {
+public interface ProductRepo extends JpaRepository<Product, Long> {
 
     Page<Product> findByCategoryId(@RequestParam("id") Long id, Pageable pageable); // Similar to "SELECT * FROM product WHERE category_id=?"
 
